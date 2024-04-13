@@ -1,0 +1,187 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  --first-color: hsl(93, 54%, 54%);
+  --first-color-alt: hsl(93, 50%, 48%);
+  --first-color-light: hsl(93, 58%, 66%);
+  --title-color: hsl(228, 8%, 98%);
+  --text-color: hsl(228, 8%, 70%);
+  --white-color: hsl(228, 8%, 98%);
+  --black-color: hsl(228, 6%, 4%);
+  --body-color: hsl(228, 6%, 8%);
+  --container-color: hsl(228, 6%, 12%);
+  --shadow-img: 0 0 48px hsla(93, 54%, 54%, .4);
+  --gradient-card: linear-gradient(180deg,
+                                hsla(93, 8%, 8%),
+                                hsla(93, 40%, 30%));
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body{
+    background: var(--body-color);
+    font-family: var(--body-font);
+}
+
+
+
+/*=========== HEADER AQUI! ===========*/
+
+.header{
+    padding-top: .5rem;
+    height: var(--header-height);
+    width: 96%;
+}
+
+.header .box{
+    display: flex;
+    justify-content: space-around;
+    width: 96%;
+}
+
+.header .box .logo{
+    font-size: 2rem;
+}
+
+.header .box .logo i{
+    color: var(--first-color);
+}
+
+.header .box .logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .Links{
+    display: flex;
+    padding-top: .8rem;
+}
+
+.header .Links a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1.8rem;
+}
+
+
+.header .buttons{
+    padding-top: .4rem;
+}
+
+.header .buttons a{
+    text-decoration: none;
+}
+
+.header .buttons i{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+
+
+/* ============= HOME AQUI! ============= */
+
+.home{
+    display: flex;
+    justify-content: center;
+}
+
+
+.home img{
+    height: 32rem;
+    width: 28rem;
+    filter: drop-shadow(10px 10px 10px var(--first-color-light));
+}
+
+.home .principal{
+    justify-content: center;
+    align-content: center;
+}
+
+.home .principal h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+    width: 30rem;
+    
+}
+
+.home .principal span{
+    text-transform: uppercase;
+    color: var(--first-color-alt);
+}
+
+.home .principal p{
+    color: #fff;
+    justify-content: start;
+    max-width: 35rem;
+}
+
+.home .goToShop{
+    display: flex;
+    margin: 0;
+    width: fit-content;
+    padding: .4rem .6rem;
+    border-radius: 5rem;
+    background: #fff;
+}
+
+.home .goToShop #Arrow{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .goToShop .BGArrow{
+    position: relative;
+    margin: 0;
+    background: var(--first-color-alt);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+.home .goToShop .BGArrow:hover{
+    transition: all .2s;
+    transform: rotateZ(-30deg);
+    filter: drop-shadow(2px 2px 2px #000);
+}
+
+.home .goToShop h2{
+    font-size: 1.2rem;
+    margin: .3rem 0;
+    color: #000;
+    padding: 0 .5rem;
+    text-transform: uppercase;
+}
+
+.home .moreDetails{
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 1rem;
+}
+
