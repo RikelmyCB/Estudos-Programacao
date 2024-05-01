@@ -77,7 +77,13 @@ body{
     padding-top: .8rem;
 }
 
-.header .Links a{
+.header .Links ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+}
+
+.header .Links ul li a{
     text-decoration: none;
     color: #fff;
     padding-right: 1.8rem;
@@ -104,6 +110,7 @@ body{
 .home{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -147,6 +154,7 @@ body{
 }
 
 .home .goToShop #Arrow{
+    color: #000;
     font-size: 1.4rem;
     position: absolute;
     top: 50%;
@@ -183,5 +191,13 @@ body{
     text-decoration: none;
     margin: 0;
     padding-top: 1rem;
+    transition: color .3s ease-in-out, 0.3s ease-in-out;
 }
 
+@media (max-width: 1030px){
+
+    
+
+
+    
+}
